@@ -3,19 +3,19 @@ let userCity = null;
 let userSport = null;
 let err = null;
 
-if(userBirthdate === null) {
+if(userBirthdate === null || userBirthdate === '') {
     alert(err = `It is a pity that you did not want to enter your date of birth`)
     throw err;
 } else (userCity = prompt('What city do you live in?'))
 
 
-if(userCity === null) {
+if(userCity === null || userCity === '') {
     alert(`It is a pity that you did not want to enter your city`)
     throw err;
 } else(userSport = prompt("What sport do you like?"))
 
 
-if(userSport === null) {
+if(userSport === null || userSport === '') {
     alert(`It is a pity that you did not want to enter your favorite sport`)
     throw err;
 } else (
